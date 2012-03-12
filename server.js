@@ -64,7 +64,7 @@ io.configure('production', function(){
     io.enable('browser client gzip');          // gzip the file
     io.enable('browser client etag');
     io.set('log level', 2);
-    io.set('close timeout', 600);
+    io.set('close timeout', 1500);
     io.set('transports', [
         'websocket'
         , 'flashsocket'

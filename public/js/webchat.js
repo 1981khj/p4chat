@@ -18,6 +18,7 @@
         hiddenJoin();
         $("#firsttab").css('display','block');        
         $(".chat_tabs li").first().trigger("click");
+        $(".btn_toggle a.on").show();
 	});
     
     // 닉네임이 존재 할 경우
