@@ -115,11 +115,13 @@
         if(!($("#contents").find("#"+data.id).length>0)){            
             makeTab(data.id, data.name);
             makeTabContainer(data.id);
-            $(".chat_tabs li").last().trigger("click");
-            if($("div.btn_toggle").is(':visible')){
-                $("#chat_wrap").addClass("toggle_on");
-            }
+            $(".chat_tabs li").last().trigger("click");            
             notificationMsg(data.name+" 님과의 일대일 대화방을 생성");
+        }
+        
+        //for mobile    
+        if($("div.btn_toggle").is(':visible')){
+            $("#chat_wrap").addClass("toggle_on");
         }
     });
     
