@@ -134,7 +134,7 @@ background:-moz-linear-gradient(top,  #f4f4f4,  #cccccc);filter:progid:DXImageTr
 .toggle_on .btn_toggle a.off{display:block !important;}
 .toggle_on .btn_toggle{top:40px;}
 }
-@media all and (orientation:landscape){
+@media all and (max-height:600px) and (orientation:landscape){
 #header{width:100%;min-width:0;}
 #contents,#messageSend{min-width:0;}
 }
