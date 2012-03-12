@@ -5,7 +5,7 @@
     //var socket = io.connect('http://p9chat.hjkim.c9.io');
     
     //for deploy
-	var socket = io.connect('http://p5chat.herokuapp.com/');
+	var socket = io.connect('http://p9chat.herokuapp.com/');
     var joined = false;
 
     // 서비스에 접속한 경우 자신의 대화명을 좌측 상단 아이콘 옆에 출력
@@ -45,6 +45,10 @@
         if(joined && logdata!=null)
             notificationMsg(logdata+" 퇴장하였습니다.");
 	});
+    
+    /*socket.on('exit', function(logdata) {
+        window.location.reload();
+    });*/
 
 
     // 왼쪽에 사용자 리스트를 그려주는 기능
